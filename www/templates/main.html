@@ -1,0 +1,24 @@
+<ion-view view-title="Cloudinary Test">
+<ion-content>
+<div class="list card">
+	<div class="item-image">
+		<img ng-src="{{picture}}">
+	</div>
+
+	<div class="item">
+		<button ng-click="takePicture()" class="button button-block button-assertive"> Take Photo </button>
+		<button ng-show="hide" ng-click="uploadPicture()" class="button button-block button-assertive"> Upload Photo </button>		
+	</div>
+
+	<div class="item">
+		{{success}}
+	</div>
+
+	<div class="item">
+		{{error}}
+	</div>
+</div>
+
+
+</ion-content>
+</ion-view>
